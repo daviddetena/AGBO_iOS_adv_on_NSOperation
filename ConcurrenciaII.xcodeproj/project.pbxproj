@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59648B1B1AD5268800759123 /* DTCImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59648B1A1AD5268800759123 /* DTCImageFilter.m */; };
 		59A0FE381AD51E52008BCD03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A0FE371AD51E52008BCD03 /* main.m */; };
 		59A0FE3B1AD51E52008BCD03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A0FE3A1AD51E52008BCD03 /* AppDelegate.m */; };
 		59A0FE3D1AD51E52008BCD03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A0FE3C1AD51E52008BCD03 /* Images.xcassets */; };
 		59A0FE401AD51E52008BCD03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A0FE3E1AD51E52008BCD03 /* LaunchScreen.xib */; };
 		59A0FE4C1AD51E52008BCD03 /* ConcurrenciaIITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A0FE4B1AD51E52008BCD03 /* ConcurrenciaIITests.m */; };
+		59A0FE581AD51E6A008BCD03 /* DTCImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A0FE561AD51E6A008BCD03 /* DTCImageViewController.m */; };
+		59A0FE591AD51E6A008BCD03 /* DTCImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A0FE571AD51E6A008BCD03 /* DTCImageViewController.xib */; };
+		59A0FE5D1AD52093008BCD03 /* DTCImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A0FE5C1AD52093008BCD03 /* DTCImageDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59648B191AD5268800759123 /* DTCImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCImageFilter.h; sourceTree = "<group>"; };
+		59648B1A1AD5268800759123 /* DTCImageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCImageFilter.m; sourceTree = "<group>"; };
 		59A0FE321AD51E52008BCD03 /* ConcurrenciaII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrenciaII.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A0FE361AD51E52008BCD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A0FE371AD51E52008BCD03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,6 +41,11 @@
 		59A0FE451AD51E52008BCD03 /* ConcurrenciaIITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcurrenciaIITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A0FE4A1AD51E52008BCD03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59A0FE4B1AD51E52008BCD03 /* ConcurrenciaIITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcurrenciaIITests.m; sourceTree = "<group>"; };
+		59A0FE551AD51E6A008BCD03 /* DTCImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCImageViewController.h; sourceTree = "<group>"; };
+		59A0FE561AD51E6A008BCD03 /* DTCImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCImageViewController.m; sourceTree = "<group>"; };
+		59A0FE571AD51E6A008BCD03 /* DTCImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCImageViewController.xib; sourceTree = "<group>"; };
+		59A0FE5B1AD52093008BCD03 /* DTCImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCImageDownloader.h; sourceTree = "<group>"; };
+		59A0FE5C1AD52093008BCD03 /* DTCImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCImageDownloader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +87,15 @@
 		59A0FE341AD51E52008BCD03 /* ConcurrenciaII */ = {
 			isa = PBXGroup;
 			children = (
+				59A0FE5A1AD52075008BCD03 /* Operations */,
 				59A0FE391AD51E52008BCD03 /* AppDelegate.h */,
 				59A0FE3A1AD51E52008BCD03 /* AppDelegate.m */,
 				59A0FE3C1AD51E52008BCD03 /* Images.xcassets */,
 				59A0FE3E1AD51E52008BCD03 /* LaunchScreen.xib */,
 				59A0FE351AD51E52008BCD03 /* Supporting Files */,
+				59A0FE551AD51E6A008BCD03 /* DTCImageViewController.h */,
+				59A0FE561AD51E6A008BCD03 /* DTCImageViewController.m */,
+				59A0FE571AD51E6A008BCD03 /* DTCImageViewController.xib */,
 			);
 			path = ConcurrenciaII;
 			sourceTree = "<group>";
@@ -109,6 +124,17 @@
 				59A0FE4A1AD51E52008BCD03 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59A0FE5A1AD52075008BCD03 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				59A0FE5B1AD52093008BCD03 /* DTCImageDownloader.h */,
+				59A0FE5C1AD52093008BCD03 /* DTCImageDownloader.m */,
+				59648B191AD5268800759123 /* DTCImageFilter.h */,
+				59648B1A1AD5268800759123 /* DTCImageFilter.m */,
+			);
+			name = Operations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A0FE401AD51E52008BCD03 /* LaunchScreen.xib in Resources */,
+				59A0FE591AD51E6A008BCD03 /* DTCImageViewController.xib in Resources */,
 				59A0FE3D1AD51E52008BCD03 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,8 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59648B1B1AD5268800759123 /* DTCImageFilter.m in Sources */,
+				59A0FE5D1AD52093008BCD03 /* DTCImageDownloader.m in Sources */,
 				59A0FE3B1AD51E52008BCD03 /* AppDelegate.m in Sources */,
 				59A0FE381AD51E52008BCD03 /* main.m in Sources */,
+				59A0FE581AD51E6A008BCD03 /* DTCImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +424,7 @@
 				59A0FE511AD51E52008BCD03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59A0FE521AD51E52008BCD03 /* Build configuration list for PBXNativeTarget "ConcurrenciaIITests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +433,7 @@
 				59A0FE541AD51E52008BCD03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
