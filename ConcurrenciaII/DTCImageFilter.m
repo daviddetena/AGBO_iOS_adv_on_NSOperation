@@ -60,9 +60,23 @@
     [falseColor setDefaults];
     [falseColor setValue:image forKey:kCIInputImageKey];
     
+    // Creamos filtro de viñeta, asignamos valores por defecto, definimos intensidad y la imagen de entrada
+    // (que será la del filtro anterior)
+    CIFilter *vignette = [CIFilter filterWithName:@"CIVignette"];
+    [vignette setDefaults];
+    [vignette setValue:@10 forKey:kCIInputIntensityKey];
+    
     // Crear imagen de salida
     CIImage *output = falseColor.outputImage;
+    
+    // Encadenamos filtros => Imagen de salida del primer filtro es la imagen de entrada del segundo
+    [vignette setValue:output forKey:kCIInputImageKey];
+    output = vignette.outputImage;
+    
+    
     // Generar imagen de salida. El extent es como un CGRect y es lo que necesitamos
+    // Ese output Core Image lo que hace es combinar los filtros que hemos creado en uno
+    // solo para aumentar el rendimiento
     CGImageRef res = [context createCGImage:output fromRect:[output extent]];
     
     
